@@ -4,18 +4,26 @@ function App() {
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [currentPage, setCurrentPage] = useState(0); // 0-based page index
+  const [currentPage, setCurrentPage] = useState(0);
   const pageSize = 10;
+
+  const [mode, setMode] = useState("list"); // "list" | "call"
+  const [selectedCustomer, setSelectedCustomer] = useState(null);
+  const [callPhone, setCallPhone] = useState("");
+  const [callScript, setCallScript] = useState("");
+  const [callLoading, setCallLoading] = useState(false);
+  const [callError, setCallError] = useState("");
 
   const handleRun = async () => {
     setLoading(true);
     setError("");
     setResults([]);
     setCurrentPage(0);
+    setMode("list");
 
     try {
       const res = await fetch("http://127.0.0.1:8000/api/topk/", {
-        method: "GET", // allowed in your view now
+        method: "GET",
       });
 
       if (!res.ok) {
@@ -36,32 +44,123 @@ function App() {
   const pageEnd = pageStart + pageSize;
   const pageData = results.slice(pageStart, pageEnd);
 
-  const handlePrev = () => {
-    setCurrentPage((p) => Math.max(0, p - 1));
-  };
-
-  const handleNext = () => {
+  const handlePrev = () => setCurrentPage((p) => Math.max(0, p - 1));
+  const handleNext = () =>
     setCurrentPage((p) => Math.min(totalPages - 1, p + 1));
-  };
 
-  // stubs for future phone/email actions
-  const handlePhoneClick = (row) => {
-    console.log("Phone click for:", row.customer_id, row.phone_number);
-    // later: trigger call API / tel: link
+  const handlePhoneClick = async (row) => {
+    setMode("call");
+    setSelectedCustomer(row);
+    setCallPhone(row.phone_number || "");
+    setCallScript("");
+    setCallError("");
+    setCallLoading(true);
+
+    try {
+      const res = await fetch("http://127.0.0.1:8000/api/call_script/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ customer_id: row.customer_id }),
+      });
+
+      if (!res.ok) {
+        throw new Error(`Request failed: ${res.status}`);
+      }
+
+      const data = await res.json();
+      setCallPhone(data.phone_number || row.phone_number || "");
+      setCallScript(data.call_script || "");
+    } catch (err) {
+      setCallError(err.message || "Failed to generate call script");
+    } finally {
+      setCallLoading(false);
+    }
   };
 
   const handleEmailClick = (row) => {
     console.log("Email click for:", row.customer_id, row.email_id);
-    // later: trigger AI-generated email / mailto / backend API
+    // will be used later
   };
 
+  const handleBackToList = () => {
+    setMode("list");
+    setCallError("");
+  };
+
+  const handleConfirmCall = () => {
+    console.log("TODO: trigger telephony API with:", {
+      customer: selectedCustomer,
+      phone: callPhone,
+      script: callScript,
+    });
+    alert("In final version, this will trigger a real call via telephony API.");
+  };
+
+  // ---------------- RENDER ----------------
+
+  if (mode === "call" && selectedCustomer) {
+    return (
+      <div style={{ padding: "24px", fontFamily: "system-ui, sans-serif" }}>
+        <button onClick={handleBackToList} style={{ marginBottom: 12 }}>
+          ◀ Back to list
+        </button>
+        <h2>Call Preview</h2>
+        <p style={{ color: "#555" }}>
+          Review the phone number and AI-generated script before triggering the
+          call.
+        </p>
+
+        <div style={{ marginBottom: 12 }}>
+          <label style={{ display: "block", marginBottom: 4 }}>
+            Customer ID: <b>{selectedCustomer.customer_id}</b>
+          </label>
+          <label style={{ display: "block", marginBottom: 4 }}>
+            Phone number:
+          </label>
+          <input
+            type="text"
+            value={callPhone}
+            onChange={(e) => setCallPhone(e.target.value)}
+            style={{ width: "300px", padding: "6px" }}
+          />
+        </div>
+
+        {callLoading && <p>Generating script...</p>}
+        {callError && <p style={{ color: "red" }}>Error: {callError}</p>}
+
+        <div style={{ marginTop: 12 }}>
+          <label style={{ display: "block", marginBottom: 4 }}>
+            Call script (editable):
+          </label>
+          <textarea
+            value={callScript}
+            onChange={(e) => setCallScript(e.target.value)}
+            rows={10}
+            style={{ width: "100%", padding: "8px", fontFamily: "inherit" }}
+          />
+        </div>
+
+        <button
+          onClick={handleConfirmCall}
+          style={{ marginTop: 16, padding: "8px 16px" }}
+          disabled={callLoading}
+        >
+          Confirm &amp; Trigger Call (stub)
+        </button>
+      </div>
+    );
+  }
+
+  // LIST VIEW
   return (
     <div style={{ padding: "24px", fontFamily: "system-ui, sans-serif" }}>
       <h1 style={{ marginBottom: 4 }}>Customer Churn Action Center</h1>
       <p style={{ maxWidth: 700, marginBottom: 16, color: "#444" }}>
-        This dashboard surfaces high-risk customers for a D2C skincare brand
-        (Minimalist-like). Click <b>Run</b> to score the latest data, then use
-        the phone and email actions to reach out and prevent churn.
+        This dashboard surfaces high-risk customers for a D2C skincare brand.
+        Click <b>Run</b> to score the latest data, then use the phone and email
+        actions to reach out and prevent churn.
       </p>
 
       <button
@@ -87,11 +186,19 @@ function App() {
 
       {results.length > 0 && (
         <>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 8 }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginTop: 8,
+            }}
+          >
             <h3 style={{ margin: 0 }}>
               Top 10% High-Risk Customers{" "}
               <span style={{ fontSize: 12, color: "#666" }}>
-                (showing {pageStart + 1}–{Math.min(pageEnd, results.length)} of {results.length})
+                (showing {pageStart + 1}–
+                {Math.min(pageEnd, results.length)} of {results.length})
               </span>
             </h3>
             <div>

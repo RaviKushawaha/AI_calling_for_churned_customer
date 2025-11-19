@@ -86,5 +86,8 @@ A full-stack web application has been built to operationalize the churn predicti
 
 ![Web Application Screenshot](images/churn_app.png)
 
+![Phone Calling Screenshot](images/call_preview.png)
+
+
 
 
