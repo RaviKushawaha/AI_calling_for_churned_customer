@@ -52,8 +52,7 @@ Customer service interaction metrics:
 A customer is classified as **churned** (`churned = 1`) if **ALL** of the following conditions are met:
 
 1. `days_since_last_purchase > 90` (No purchase in last 90 days)
-2. `total_orders > 3` (Has made more than 3 orders historically)
-3. `avg_order_value < 600` (Low average order value)
+2. `total_orders > 3` and `avg_order_value < 600` (Has made more than 3 orders with low average order value)
 
 This definition targets customers who were previously engaged but have shown signs of disengagement.
 
@@ -61,7 +60,7 @@ This definition targets customers who were previously engaged but have shown sig
 
 ### Prerequisites
 ```bash
-pip install pandas numpy faker
+pip install -r requirements.txt
 ```
 
 ### Generate Dataset
@@ -75,4 +74,10 @@ After running the script, you'll find three CSV files in your working directory:
 - `customer_profile.csv`
 - `purchase_behavior.csv`
 - `customer_support.csv`
+
+## 🤖 Model Training
+
+An XGBoost classifier is trained on the generated dataset to predict customer churn. The model uses features from all three datasets to identify at-risk customers.
+Model is saved at `churn_ml_model/xgb_churn_model.pkl`
+
 
