@@ -1,6 +1,11 @@
+# ML + data
 pandas
 numpy
 scikit-learn
 xgboost
 matplotlib
 joblib
+
+# web-app
+Django
+django-environ

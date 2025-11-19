@@ -1,0 +1,30 @@
+<h2>Churn Dashboard</h2>
+
+<form method="POST">
+  {% csrf_token %}
+  <button type="submit">Run with real_time_data CSVs</button>
+</form>
+
+{% if error %}
+  <p style="color:red;">Error: {{ error }}</p>
+{% endif %}
+
+{% if results %}
+<h3>Top 10% Customers</h3>
+<table border="1">
+  <tr>
+    <th>Customer ID</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Probability</th>
+  </tr>
+  {% for r in results %}
+  <tr>
+    <td>{{ r.customer_id }}</td>
+    <td>{{ r.email_id }}</td>
+    <td>{{ r.phone_number }}</td>
+    <td>{{ r.prob|floatformat:3 }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endif %}
