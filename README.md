@@ -80,4 +80,11 @@ After running the script, you'll find three CSV files in your working directory:
 An XGBoost classifier is trained on the generated dataset to predict customer churn. The model uses features from all three datasets to identify at-risk customers.
 Model is saved at `churn_ml_model/xgb_churn_model.pkl`
 
+## 🌐 Web Application
+
+A full-stack web application has been built to operationalize the churn prediction model. The backend is developed using **Django**, which serves the trained XGBoost model via REST APIs and handles customer data management. The frontend is built with **React**, providing an intuitive interface for viewing customer churn predictions, risk scores, and option to call and email the customer.
+
+![Web Application Screenshot](images\churn_app.png)
+
+
 

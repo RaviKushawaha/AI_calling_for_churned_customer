@@ -7,8 +7,19 @@ class Preprocessor:
             profile.merge(purchase, on="customer_id")
                    .merge(support, on="customer_id")
         )
-        raw = df[["customer_id","email_id","phone_number"]]  # keep for UI
+
+        # need these for UI (raw_info)
+        raw = df[[
+            "customer_id",
+            "email_id",
+            "phone_number",
+            "avg_order_value",
+            "acquisition_channel",
+            "days_since_last_purchase",
+        ]].copy()
+
         df = df.drop(columns=["customer_id","email_id","phone_number"])
+        
         return df, raw
 
     @staticmethod

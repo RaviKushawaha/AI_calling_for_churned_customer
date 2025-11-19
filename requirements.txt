@@ -9,3 +9,4 @@ joblib
 # web-app
 Django
 django-environ
+django-cors-headers

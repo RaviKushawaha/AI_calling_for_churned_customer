@@ -9,8 +9,9 @@ from .predictor import ChurnPredictor
 DATA_DIR = Path(settings.BASE_DIR) / "real_time_data"
 
 def topk_api(request):
-    if request.method != "POST":
-        return JsonResponse({"error": "POST only"}, status=405)
+    # Allow both GET and POST
+    if request.method not in ["GET", "POST"]:
+        return JsonResponse({"error": "GET/POST only"}, status=405)
 
     try:
         profile = pd.read_csv(DATA_DIR / "customer_profile_test.csv")
@@ -25,7 +26,7 @@ def topk_api(request):
         return JsonResponse({"error": str(e)}, status=500)
 
 
-## uncomment to check the backend without POST
+## uncomment the below part to check the backend without POST
 
 # def topk_api(request):
 #     try:
