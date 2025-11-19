@@ -1,0 +1,501 @@
+customer_id,phone_number,email_id,age,gender,city_tier,acquisition_channel
+1,7992907437,customer1@example.com,40,Male,3,Instagram
+2,9610371200,customer2@example.com,27,Male,2,Google Ads
+3,7242007912,customer3@example.com,36,Female,1,Influencer
+4,7126097999,customer4@example.com,22,Female,3,Instagram
+5,9128639417,customer5@example.com,40,Male,3,Google Ads
+6,9384839487,customer6@example.com,47,Male,2,Google Ads
+7,7202310676,customer7@example.com,42,Other,2,Referral
+8,8406682800,customer8@example.com,45,Male,3,Influencer
+9,7385203828,customer9@example.com,51,Female,3,Organic
+10,7632944283,customer10@example.com,42,Male,3,Organic
+11,7434686499,customer11@example.com,27,Female,2,Influencer
+12,7694261899,customer12@example.com,31,Female,2,Google Ads
+13,9056798191,customer13@example.com,59,Male,3,Google Ads
+14,7445270530,customer14@example.com,47,Female,1,Organic
+15,8683352569,customer15@example.com,58,Male,2,Google Ads
+16,9926219378,customer16@example.com,42,Male,3,Instagram
+17,8602808705,customer17@example.com,31,Female,2,Instagram
+18,8459454432,customer18@example.com,52,Male,2,Instagram
+19,8238180045,customer19@example.com,51,Female,2,Influencer
+20,8526897574,customer20@example.com,27,Male,1,Google Ads
+21,9793979148,customer21@example.com,52,Male,2,Organic
+22,9350804325,customer22@example.com,28,Male,3,Google Ads
+23,8124819714,customer23@example.com,28,Male,1,Instagram
+24,8670501049,customer24@example.com,38,Male,1,Google Ads
+25,9850018204,customer25@example.com,38,Female,3,Organic
+26,9650445246,customer26@example.com,39,Female,1,Organic
+27,9444992048,customer27@example.com,24,Female,1,Referral
+28,7023007176,customer28@example.com,34,Male,3,Organic
+29,7991552105,customer29@example.com,19,Male,3,Organic
+30,7480644126,customer30@example.com,29,Male,2,Organic
+31,8515111213,customer31@example.com,59,Male,3,Referral
+32,7850769204,customer32@example.com,35,Female,1,Organic
+33,8397090374,customer33@example.com,28,Male,3,Instagram
+34,8154128665,customer34@example.com,33,Male,2,Google Ads
+35,7737378221,customer35@example.com,35,Female,3,Organic
+36,8922441954,customer36@example.com,52,Male,2,Organic
+37,7504891098,customer37@example.com,43,Male,2,Instagram
+38,7988570930,customer38@example.com,33,Male,2,Influencer
+39,9702375967,customer39@example.com,23,Male,2,Referral
+40,7197262619,customer40@example.com,59,Female,3,Instagram
+41,9522864968,customer41@example.com,29,Male,2,Influencer
+42,7065980383,customer42@example.com,30,Male,2,Instagram
+43,7928135177,customer43@example.com,21,Male,2,Instagram
+44,9029845391,customer44@example.com,56,Male,2,Instagram
+45,9754804545,customer45@example.com,19,Male,3,Instagram
+46,7563768622,customer46@example.com,43,Female,3,Influencer
+47,8743751335,customer47@example.com,44,Female,2,Instagram
+48,9507528179,customer48@example.com,44,Female,3,Instagram
+49,8245953230,customer49@example.com,32,Male,3,Instagram
+50,8300954320,customer50@example.com,25,Female,2,Instagram
+51,8517946917,customer51@example.com,24,Female,2,Instagram
+52,9130480875,customer52@example.com,57,Male,3,Organic
+53,8620414781,customer53@example.com,29,Female,2,Instagram
+54,9220757842,customer54@example.com,30,Male,3,Influencer
+55,8444293898,customer55@example.com,34,Male,2,Influencer
+56,7177672506,customer56@example.com,34,Female,2,Instagram
+57,7080061477,customer57@example.com,53,Male,1,Influencer
+58,9262552627,customer58@example.com,38,Female,2,Instagram
+59,7930363580,customer59@example.com,25,Male,3,Instagram
+60,7460351949,customer60@example.com,22,Female,2,Instagram
+61,8055373774,customer61@example.com,43,Female,2,Google Ads
+62,9312233943,customer62@example.com,33,Female,3,Google Ads
+63,8975576997,customer63@example.com,53,Male,2,Organic
+64,8180733474,customer64@example.com,45,Male,2,Google Ads
+65,8790985278,customer65@example.com,46,Male,3,Organic
+66,8560449356,customer66@example.com,29,Male,3,Instagram
+67,8805627484,customer67@example.com,54,Male,1,Organic
+68,8893849823,customer68@example.com,47,Female,2,Instagram
+69,8895161102,customer69@example.com,40,Female,2,Instagram
+70,9578635470,customer70@example.com,33,Other,2,Instagram
+71,7059140603,customer71@example.com,31,Male,2,Instagram
+72,8803557060,customer72@example.com,27,Male,2,Google Ads
+73,8627207210,customer73@example.com,24,Male,1,Influencer
+74,8211501523,customer74@example.com,54,Female,2,Instagram
+75,8076629921,customer75@example.com,46,Female,1,Organic
+76,8066167086,customer76@example.com,20,Female,2,Organic
+77,8276758422,customer77@example.com,32,Female,3,Influencer
+78,7071277334,customer78@example.com,53,Female,3,Instagram
+79,7546169606,customer79@example.com,36,Male,2,Google Ads
+80,8422311043,customer80@example.com,30,Male,1,Referral
+81,7912663445,customer81@example.com,59,Female,1,Organic
+82,9814239570,customer82@example.com,38,Male,2,Google Ads
+83,8976012087,customer83@example.com,54,Male,1,Instagram
+84,9186855399,customer84@example.com,44,Female,2,Instagram
+85,9164514938,customer85@example.com,46,Other,1,Organic
+86,8510485964,customer86@example.com,37,Female,3,Organic
+87,7954857184,customer87@example.com,42,Female,2,Instagram
+88,9690949150,customer88@example.com,23,Female,1,Organic
+89,8243294730,customer89@example.com,53,Male,3,Organic
+90,9672516755,customer90@example.com,19,Male,2,Google Ads
+91,9470933223,customer91@example.com,39,Female,1,Organic
+92,9018914887,customer92@example.com,49,Female,2,Influencer
+93,9008798622,customer93@example.com,33,Male,2,Google Ads
+94,7142512400,customer94@example.com,35,Female,3,Influencer
+95,9986072740,customer95@example.com,22,Male,1,Instagram
+96,9645578189,customer96@example.com,53,Male,2,Instagram
+97,9899606945,customer97@example.com,47,Female,1,Instagram
+98,7964682716,customer98@example.com,36,Male,1,Instagram
+99,9136219607,customer99@example.com,40,Male,3,Instagram
+100,9212479666,customer100@example.com,51,Male,3,Instagram
+101,7703581091,customer101@example.com,30,Female,2,Influencer
+102,7629161263,customer102@example.com,46,Male,2,Instagram
+103,7048789863,customer103@example.com,53,Female,1,Organic
+104,9400271314,customer104@example.com,39,Female,3,Instagram
+105,7804808739,customer105@example.com,53,Male,1,Referral
+106,7445677186,customer106@example.com,26,Other,1,Organic
+107,9337354291,customer107@example.com,56,Male,2,Instagram
+108,7898092754,customer108@example.com,36,Other,2,Organic
+109,9456082390,customer109@example.com,55,Female,2,Google Ads
+110,8921107225,customer110@example.com,23,Other,1,Organic
+111,7788341872,customer111@example.com,32,Male,2,Google Ads
+112,8828198784,customer112@example.com,37,Female,2,Organic
+113,9175749154,customer113@example.com,26,Male,1,Organic
+114,7401729277,customer114@example.com,49,Male,3,Google Ads
+115,9170572708,customer115@example.com,21,Female,1,Instagram
+116,8849356498,customer116@example.com,35,Male,2,Influencer
+117,9269946131,customer117@example.com,22,Female,2,Google Ads
+118,7610807172,customer118@example.com,37,Male,1,Google Ads
+119,7526981453,customer119@example.com,40,Male,2,Instagram
+120,8331305095,customer120@example.com,28,Female,3,Google Ads
+121,9059711323,customer121@example.com,54,Male,1,Referral
+122,7605296911,customer122@example.com,39,Female,3,Instagram
+123,8302866313,customer123@example.com,21,Female,2,Google Ads
+124,7520744352,customer124@example.com,46,Female,1,Organic
+125,7842095120,customer125@example.com,51,Male,2,Influencer
+126,9871780471,customer126@example.com,30,Female,2,Google Ads
+127,7362479238,customer127@example.com,59,Other,3,Google Ads
+128,9603385855,customer128@example.com,26,Female,3,Referral
+129,7441770741,customer129@example.com,59,Female,3,Organic
+130,8158058752,customer130@example.com,48,Female,3,Instagram
+131,7780855309,customer131@example.com,24,Female,3,Instagram
+132,9710100803,customer132@example.com,21,Female,2,Google Ads
+133,9956156991,customer133@example.com,36,Male,2,Instagram
+134,8196072585,customer134@example.com,59,Male,2,Instagram
+135,7868177136,customer135@example.com,47,Female,1,Influencer
+136,7335959289,customer136@example.com,48,Male,3,Instagram
+137,8156829263,customer137@example.com,52,Female,2,Organic
+138,7764621512,customer138@example.com,38,Male,1,Instagram
+139,7547829225,customer139@example.com,48,Female,1,Organic
+140,9060497343,customer140@example.com,36,Male,2,Organic
+141,7371028394,customer141@example.com,48,Male,2,Instagram
+142,7131135692,customer142@example.com,49,Female,2,Google Ads
+143,8295217402,customer143@example.com,19,Female,2,Instagram
+144,8973691644,customer144@example.com,27,Female,2,Influencer
+145,9585768316,customer145@example.com,19,Male,2,Influencer
+146,7508812440,customer146@example.com,19,Female,1,Google Ads
+147,7773692599,customer147@example.com,41,Female,1,Google Ads
+148,7804370853,customer148@example.com,34,Female,2,Google Ads
+149,9844400775,customer149@example.com,49,Male,2,Organic
+150,9311843906,customer150@example.com,33,Female,1,Google Ads
+151,8254440029,customer151@example.com,33,Female,2,Instagram
+152,9341718186,customer152@example.com,56,Other,1,Google Ads
+153,7716536319,customer153@example.com,48,Male,2,Instagram
+154,7671406754,customer154@example.com,41,Female,2,Organic
+155,9510669911,customer155@example.com,18,Female,2,Instagram
+156,7097707830,customer156@example.com,28,Male,3,Organic
+157,7024489115,customer157@example.com,38,Male,1,Instagram
+158,9808884831,customer158@example.com,21,Male,3,Instagram
+159,9535251186,customer159@example.com,24,Male,2,Organic
+160,7207568409,customer160@example.com,43,Male,2,Referral
+161,7642800025,customer161@example.com,29,Female,2,Organic
+162,7927918249,customer162@example.com,48,Female,2,Instagram
+163,8715498414,customer163@example.com,34,Female,2,Instagram
+164,8365146648,customer164@example.com,50,Female,2,Influencer
+165,8323452134,customer165@example.com,28,Male,1,Google Ads
+166,9327931103,customer166@example.com,45,Male,1,Instagram
+167,8986966709,customer167@example.com,49,Female,2,Influencer
+168,9973335650,customer168@example.com,18,Male,2,Influencer
+169,9796554589,customer169@example.com,45,Male,2,Referral
+170,8897989770,customer170@example.com,59,Male,1,Referral
+171,8943172369,customer171@example.com,24,Male,3,Influencer
+172,8812390614,customer172@example.com,19,Female,3,Instagram
+173,7021064054,customer173@example.com,59,Male,3,Instagram
+174,8269888126,customer174@example.com,41,Male,2,Organic
+175,7412956806,customer175@example.com,21,Male,3,Google Ads
+176,9723959637,customer176@example.com,36,Female,3,Google Ads
+177,7403287058,customer177@example.com,43,Male,2,Google Ads
+178,8630144757,customer178@example.com,28,Female,2,Google Ads
+179,9125925516,customer179@example.com,57,Male,3,Organic
+180,9150216375,customer180@example.com,28,Male,2,Instagram
+181,9934869860,customer181@example.com,20,Female,2,Instagram
+182,7732627543,customer182@example.com,29,Male,1,Google Ads
+183,8770843551,customer183@example.com,20,Male,1,Organic
+184,9760453130,customer184@example.com,59,Male,3,Instagram
+185,9611841880,customer185@example.com,44,Female,2,Google Ads
+186,9236931652,customer186@example.com,19,Male,2,Organic
+187,7554390951,customer187@example.com,33,Female,1,Google Ads
+188,7279526384,customer188@example.com,19,Male,2,Instagram
+189,8211213198,customer189@example.com,47,Male,2,Google Ads
+190,7185030532,customer190@example.com,37,Male,1,Instagram
+191,9285841741,customer191@example.com,55,Female,3,Referral
+192,8383315162,customer192@example.com,45,Male,1,Instagram
+193,9242198117,customer193@example.com,42,Male,2,Organic
+194,9862824826,customer194@example.com,49,Male,2,Instagram
+195,7033670463,customer195@example.com,27,Male,1,Google Ads
+196,8335614326,customer196@example.com,59,Male,3,Organic
+197,7564546145,customer197@example.com,57,Female,3,Instagram
+198,7549697640,customer198@example.com,50,Male,3,Google Ads
+199,8491441430,customer199@example.com,30,Male,1,Instagram
+200,9204364931,customer200@example.com,58,Female,1,Google Ads
+201,9317283594,customer201@example.com,59,Male,1,Organic
+202,8908078801,customer202@example.com,54,Male,2,Google Ads
+203,9091974617,customer203@example.com,33,Male,3,Influencer
+204,8570067240,customer204@example.com,39,Female,3,Organic
+205,8647786027,customer205@example.com,37,Male,3,Google Ads
+206,7270434793,customer206@example.com,44,Female,3,Instagram
+207,8326229445,customer207@example.com,58,Male,3,Google Ads
+208,7795077881,customer208@example.com,33,Female,2,Organic
+209,9120338889,customer209@example.com,51,Male,1,Instagram
+210,9619437154,customer210@example.com,49,Female,2,Influencer
+211,9190716887,customer211@example.com,43,Female,1,Instagram
+212,9981533420,customer212@example.com,42,Female,1,Influencer
+213,7742966081,customer213@example.com,19,Male,2,Instagram
+214,9447766558,customer214@example.com,29,Male,3,Influencer
+215,8511431267,customer215@example.com,57,Male,1,Google Ads
+216,8540725266,customer216@example.com,26,Male,3,Instagram
+217,8847997042,customer217@example.com,29,Male,3,Instagram
+218,7037291894,customer218@example.com,43,Female,2,Google Ads
+219,9618833599,customer219@example.com,26,Male,1,Referral
+220,9950814832,customer220@example.com,27,Male,1,Instagram
+221,9657249333,customer221@example.com,49,Female,3,Instagram
+222,7975294545,customer222@example.com,51,Female,3,Organic
+223,8764953830,customer223@example.com,37,Male,3,Google Ads
+224,8663274963,customer224@example.com,56,Female,2,Google Ads
+225,9377112202,customer225@example.com,19,Male,1,Organic
+226,8579543236,customer226@example.com,18,Female,1,Instagram
+227,8060130850,customer227@example.com,53,Female,3,Referral
+228,7053356894,customer228@example.com,41,Female,1,Google Ads
+229,7839120550,customer229@example.com,44,Female,2,Instagram
+230,7242929244,customer230@example.com,19,Male,2,Organic
+231,7304943593,customer231@example.com,48,Male,1,Organic
+232,9661207835,customer232@example.com,31,Female,1,Google Ads
+233,7858378347,customer233@example.com,19,Male,2,Organic
+234,8956267959,customer234@example.com,46,Female,1,Instagram
+235,9858373198,customer235@example.com,32,Male,1,Google Ads
+236,8431065173,customer236@example.com,29,Male,3,Influencer
+237,8764997849,customer237@example.com,54,Male,3,Instagram
+238,8414269470,customer238@example.com,45,Male,1,Google Ads
+239,7228488014,customer239@example.com,37,Female,3,Influencer
+240,7398656007,customer240@example.com,56,Female,2,Referral
+241,9198650015,customer241@example.com,41,Female,2,Google Ads
+242,9510944158,customer242@example.com,38,Female,3,Google Ads
+243,7191265775,customer243@example.com,27,Female,3,Organic
+244,8922064393,customer244@example.com,31,Female,3,Referral
+245,9357745387,customer245@example.com,54,Male,1,Influencer
+246,7990187270,customer246@example.com,35,Female,1,Instagram
+247,7932563681,customer247@example.com,41,Male,3,Google Ads
+248,7242797783,customer248@example.com,31,Male,2,Google Ads
+249,8447687193,customer249@example.com,51,Female,1,Organic
+250,7516221750,customer250@example.com,29,Male,3,Organic
+251,7067443552,customer251@example.com,39,Male,3,Organic
+252,7860644135,customer252@example.com,23,Male,3,Referral
+253,7964820383,customer253@example.com,53,Male,2,Instagram
+254,9194283515,customer254@example.com,53,Female,3,Instagram
+255,9281847152,customer255@example.com,39,Male,1,Google Ads
+256,7947904231,customer256@example.com,31,Male,1,Google Ads
+257,8821986504,customer257@example.com,33,Male,2,Instagram
+258,9203112776,customer258@example.com,53,Male,1,Instagram
+259,7583076623,customer259@example.com,42,Female,2,Organic
+260,9985428443,customer260@example.com,49,Male,2,Influencer
+261,9306821205,customer261@example.com,50,Female,2,Google Ads
+262,8617534722,customer262@example.com,53,Female,1,Google Ads
+263,7308779565,customer263@example.com,37,Female,1,Instagram
+264,7822292836,customer264@example.com,35,Female,2,Organic
+265,8868237543,customer265@example.com,55,Female,2,Organic
+266,8708073842,customer266@example.com,20,Male,3,Organic
+267,7883371858,customer267@example.com,40,Male,3,Instagram
+268,7760214443,customer268@example.com,49,Male,2,Instagram
+269,8420488320,customer269@example.com,33,Female,3,Instagram
+270,9170767582,customer270@example.com,22,Male,1,Organic
+271,9935742538,customer271@example.com,21,Male,1,Influencer
+272,8236635251,customer272@example.com,38,Male,3,Influencer
+273,9716807655,customer273@example.com,57,Male,2,Google Ads
+274,8581059729,customer274@example.com,31,Male,3,Organic
+275,9080272370,customer275@example.com,56,Other,2,Referral
+276,9500730964,customer276@example.com,48,Male,3,Instagram
+277,7409588740,customer277@example.com,31,Female,2,Google Ads
+278,7807426686,customer278@example.com,23,Female,2,Referral
+279,9207277409,customer279@example.com,29,Male,2,Google Ads
+280,9694786603,customer280@example.com,33,Male,3,Referral
+281,7111303142,customer281@example.com,34,Male,2,Referral
+282,7730092861,customer282@example.com,40,Male,3,Organic
+283,7891291258,customer283@example.com,31,Female,1,Influencer
+284,8862354152,customer284@example.com,24,Male,1,Organic
+285,9710820694,customer285@example.com,49,Male,2,Organic
+286,7408678545,customer286@example.com,32,Female,2,Google Ads
+287,9132684591,customer287@example.com,34,Female,3,Instagram
+288,8228679853,customer288@example.com,58,Female,2,Google Ads
+289,8076174634,customer289@example.com,51,Female,2,Organic
+290,7700329120,customer290@example.com,22,Female,2,Instagram
+291,8054713750,customer291@example.com,44,Male,2,Instagram
+292,9301477239,customer292@example.com,40,Female,3,Instagram
+293,7592154949,customer293@example.com,57,Male,1,Organic
+294,9494265318,customer294@example.com,31,Female,2,Referral
+295,9030534480,customer295@example.com,32,Female,3,Referral
+296,8154622912,customer296@example.com,50,Male,3,Google Ads
+297,8904463207,customer297@example.com,48,Female,2,Influencer
+298,8213202175,customer298@example.com,52,Female,2,Organic
+299,8879246474,customer299@example.com,34,Male,1,Google Ads
+300,8043524155,customer300@example.com,45,Female,2,Organic
+301,7456407389,customer301@example.com,36,Male,3,Instagram
+302,9502293569,customer302@example.com,40,Female,2,Referral
+303,9350768210,customer303@example.com,49,Female,1,Google Ads
+304,9241236287,customer304@example.com,57,Female,1,Google Ads
+305,9300007252,customer305@example.com,30,Female,1,Organic
+306,8461552599,customer306@example.com,37,Female,1,Google Ads
+307,9418727822,customer307@example.com,52,Female,1,Instagram
+308,7179076620,customer308@example.com,22,Male,2,Organic
+309,7384047748,customer309@example.com,26,Female,1,Instagram
+310,9032176813,customer310@example.com,46,Male,1,Organic
+311,9527212517,customer311@example.com,23,Female,2,Google Ads
+312,7061951197,customer312@example.com,42,Male,1,Organic
+313,7162767656,customer313@example.com,48,Male,1,Organic
+314,8460084424,customer314@example.com,39,Female,2,Google Ads
+315,7288506699,customer315@example.com,19,Male,1,Organic
+316,8375331134,customer316@example.com,22,Male,2,Organic
+317,8753671611,customer317@example.com,44,Male,1,Organic
+318,8718080991,customer318@example.com,42,Male,3,Organic
+319,8550671785,customer319@example.com,25,Male,3,Influencer
+320,8488028133,customer320@example.com,18,Male,3,Instagram
+321,9122057240,customer321@example.com,37,Male,2,Google Ads
+322,7969087696,customer322@example.com,40,Male,3,Referral
+323,8444070388,customer323@example.com,49,Female,2,Google Ads
+324,7432249045,customer324@example.com,28,Male,1,Instagram
+325,7682128681,customer325@example.com,56,Female,2,Google Ads
+326,8431885575,customer326@example.com,41,Female,3,Instagram
+327,9036187763,customer327@example.com,28,Male,2,Instagram
+328,8125475503,customer328@example.com,46,Female,1,Referral
+329,9428055944,customer329@example.com,43,Female,3,Google Ads
+330,7945715039,customer330@example.com,33,Other,3,Instagram
+331,9282505378,customer331@example.com,52,Female,1,Referral
+332,9399503607,customer332@example.com,37,Male,2,Referral
+333,9954981456,customer333@example.com,20,Female,1,Google Ads
+334,7480696384,customer334@example.com,18,Female,3,Instagram
+335,7363287068,customer335@example.com,18,Female,1,Influencer
+336,9775372811,customer336@example.com,34,Male,2,Organic
+337,9693978647,customer337@example.com,19,Female,3,Organic
+338,8315809698,customer338@example.com,46,Female,2,Influencer
+339,9989247730,customer339@example.com,37,Male,2,Organic
+340,8035758819,customer340@example.com,23,Male,2,Instagram
+341,9014338750,customer341@example.com,25,Male,1,Organic
+342,8151944555,customer342@example.com,46,Female,2,Google Ads
+343,7192570015,customer343@example.com,50,Female,1,Organic
+344,9832798481,customer344@example.com,20,Female,2,Organic
+345,9266551953,customer345@example.com,52,Male,1,Instagram
+346,9210411679,customer346@example.com,22,Female,2,Google Ads
+347,9730603715,customer347@example.com,44,Male,3,Google Ads
+348,8584934947,customer348@example.com,29,Male,3,Google Ads
+349,9971675482,customer349@example.com,37,Female,2,Organic
+350,7938576120,customer350@example.com,37,Other,1,Google Ads
+351,7860233422,customer351@example.com,26,Female,2,Organic
+352,9069013341,customer352@example.com,56,Female,3,Instagram
+353,7301099336,customer353@example.com,21,Male,1,Organic
+354,9988490051,customer354@example.com,36,Male,3,Influencer
+355,9783472429,customer355@example.com,55,Female,2,Organic
+356,7226669744,customer356@example.com,44,Female,3,Google Ads
+357,9369313782,customer357@example.com,30,Male,3,Referral
+358,7683924027,customer358@example.com,30,Male,3,Instagram
+359,8731779321,customer359@example.com,39,Male,2,Instagram
+360,9806473644,customer360@example.com,45,Female,1,Google Ads
+361,8888554897,customer361@example.com,39,Male,2,Instagram
+362,7665432253,customer362@example.com,36,Male,2,Referral
+363,8523846914,customer363@example.com,25,Male,1,Instagram
+364,8828536754,customer364@example.com,25,Male,2,Organic
+365,7547069918,customer365@example.com,59,Female,2,Organic
+366,8095803384,customer366@example.com,43,Male,2,Instagram
+367,8450082308,customer367@example.com,43,Female,2,Organic
+368,7717650696,customer368@example.com,40,Female,1,Instagram
+369,8801885533,customer369@example.com,30,Female,3,Google Ads
+370,7420060029,customer370@example.com,45,Male,1,Instagram
+371,8331023279,customer371@example.com,26,Other,2,Referral
+372,7016372580,customer372@example.com,37,Female,2,Referral
+373,7072404572,customer373@example.com,36,Other,3,Instagram
+374,8298336175,customer374@example.com,56,Female,1,Instagram
+375,8284767621,customer375@example.com,29,Male,2,Organic
+376,8622137004,customer376@example.com,32,Male,2,Instagram
+377,9405048457,customer377@example.com,48,Male,1,Influencer
+378,9018254163,customer378@example.com,31,Female,2,Organic
+379,9035666257,customer379@example.com,28,Male,3,Google Ads
+380,7371988799,customer380@example.com,43,Male,3,Influencer
+381,8015948419,customer381@example.com,59,Male,1,Google Ads
+382,7380062918,customer382@example.com,44,Male,1,Referral
+383,9217955966,customer383@example.com,28,Male,2,Referral
+384,8538532321,customer384@example.com,55,Male,2,Instagram
+385,7415259805,customer385@example.com,51,Male,1,Instagram
+386,8831302989,customer386@example.com,36,Male,1,Referral
+387,7452475318,customer387@example.com,23,Male,3,Referral
+388,8003608320,customer388@example.com,55,Male,3,Instagram
+389,9938955091,customer389@example.com,59,Female,1,Influencer
+390,9512348389,customer390@example.com,45,Female,2,Google Ads
+391,8270889137,customer391@example.com,18,Male,2,Instagram
+392,7604630841,customer392@example.com,52,Male,1,Influencer
+393,9712901691,customer393@example.com,57,Female,2,Instagram
+394,9523729506,customer394@example.com,25,Female,2,Referral
+395,9772908586,customer395@example.com,24,Female,3,Instagram
+396,8005481741,customer396@example.com,28,Female,3,Organic
+397,8959731411,customer397@example.com,56,Male,2,Instagram
+398,7598356573,customer398@example.com,21,Male,2,Google Ads
+399,7062518055,customer399@example.com,42,Male,1,Organic
+400,7440941623,customer400@example.com,29,Female,2,Instagram
+401,8223403796,customer401@example.com,43,Female,2,Google Ads
+402,8849378664,customer402@example.com,55,Female,1,Google Ads
+403,7390996004,customer403@example.com,29,Male,1,Instagram
+404,7852265854,customer404@example.com,54,Female,1,Influencer
+405,8960628584,customer405@example.com,41,Male,3,Google Ads
+406,7636067414,customer406@example.com,33,Male,1,Organic
+407,9515500929,customer407@example.com,30,Male,1,Google Ads
+408,8923189665,customer408@example.com,42,Female,2,Google Ads
+409,7257780022,customer409@example.com,21,Male,2,Instagram
+410,8979011250,customer410@example.com,28,Female,1,Google Ads
+411,9104679064,customer411@example.com,49,Male,3,Google Ads
+412,8902690640,customer412@example.com,24,Female,3,Organic
+413,8008249858,customer413@example.com,28,Female,2,Influencer
+414,8770858225,customer414@example.com,45,Male,2,Google Ads
+415,8862218248,customer415@example.com,58,Female,1,Instagram
+416,9712175587,customer416@example.com,40,Female,2,Instagram
+417,8338011539,customer417@example.com,40,Female,3,Instagram
+418,8222576339,customer418@example.com,45,Female,1,Instagram
+419,7108178378,customer419@example.com,43,Female,1,Google Ads
+420,8994693024,customer420@example.com,42,Male,2,Instagram
+421,7268590624,customer421@example.com,46,Female,1,Instagram
+422,9939445995,customer422@example.com,36,Male,3,Instagram
+423,9778719091,customer423@example.com,50,Male,1,Instagram
+424,9129610582,customer424@example.com,53,Male,3,Instagram
+425,9520493659,customer425@example.com,31,Female,2,Instagram
+426,7643665739,customer426@example.com,31,Female,3,Google Ads
+427,8430704554,customer427@example.com,52,Male,2,Google Ads
+428,9247158777,customer428@example.com,47,Female,2,Instagram
+429,8675117055,customer429@example.com,45,Female,3,Google Ads
+430,7392202342,customer430@example.com,34,Male,2,Google Ads
+431,7542557103,customer431@example.com,20,Male,2,Instagram
+432,7692244928,customer432@example.com,33,Female,2,Instagram
+433,9321983267,customer433@example.com,47,Male,3,Google Ads
+434,8164424135,customer434@example.com,46,Female,2,Organic
+435,8093581651,customer435@example.com,32,Male,3,Instagram
+436,8764468885,customer436@example.com,42,Male,1,Instagram
+437,7952063075,customer437@example.com,55,Female,2,Influencer
+438,9510131067,customer438@example.com,59,Female,3,Instagram
+439,7535279140,customer439@example.com,55,Female,2,Instagram
+440,7513597753,customer440@example.com,40,Female,3,Influencer
+441,8779033667,customer441@example.com,42,Female,3,Influencer
+442,7467822349,customer442@example.com,59,Female,2,Google Ads
+443,8068743646,customer443@example.com,24,Male,1,Google Ads
+444,9009211691,customer444@example.com,39,Female,1,Instagram
+445,8315793432,customer445@example.com,34,Male,3,Instagram
+446,9487777677,customer446@example.com,35,Female,3,Organic
+447,8796033495,customer447@example.com,58,Male,1,Instagram
+448,7315776516,customer448@example.com,27,Female,1,Google Ads
+449,7459772600,customer449@example.com,27,Male,1,Referral
+450,9698694718,customer450@example.com,24,Female,3,Referral
+451,9581270966,customer451@example.com,55,Female,2,Instagram
+452,9087394185,customer452@example.com,44,Male,2,Organic
+453,8268216638,customer453@example.com,50,Female,2,Google Ads
+454,8700452895,customer454@example.com,18,Male,3,Influencer
+455,9367855742,customer455@example.com,51,Female,2,Instagram
+456,7251557678,customer456@example.com,21,Female,2,Instagram
+457,8529204388,customer457@example.com,34,Male,1,Instagram
+458,8493653910,customer458@example.com,21,Female,2,Google Ads
+459,8330530007,customer459@example.com,43,Male,3,Google Ads
+460,9971677964,customer460@example.com,21,Male,3,Organic
+461,9086151061,customer461@example.com,18,Female,1,Organic
+462,9144607238,customer462@example.com,24,Male,1,Instagram
+463,9394630838,customer463@example.com,47,Other,1,Google Ads
+464,9502180887,customer464@example.com,26,Female,2,Instagram
+465,7707926009,customer465@example.com,52,Male,3,Influencer
+466,7447675515,customer466@example.com,25,Female,1,Referral
+467,9425780227,customer467@example.com,41,Male,2,Referral
+468,8042172605,customer468@example.com,36,Male,2,Influencer
+469,9275156423,customer469@example.com,53,Male,1,Instagram
+470,7359039390,customer470@example.com,44,Male,2,Instagram
+471,7836292770,customer471@example.com,49,Male,1,Organic
+472,8917077135,customer472@example.com,31,Male,2,Referral
+473,7877681297,customer473@example.com,35,Other,3,Instagram
+474,9598937922,customer474@example.com,45,Female,2,Instagram
+475,8742902849,customer475@example.com,46,Female,1,Influencer
+476,9161363660,customer476@example.com,33,Female,3,Instagram
+477,9581294830,customer477@example.com,52,Female,2,Google Ads
+478,8354035993,customer478@example.com,48,Male,3,Organic
+479,9847894506,customer479@example.com,21,Female,1,Instagram
+480,7314257627,customer480@example.com,54,Other,1,Instagram
+481,9198307649,customer481@example.com,34,Male,1,Organic
+482,8464754810,customer482@example.com,56,Female,1,Organic
+483,8726975986,customer483@example.com,43,Female,2,Referral
+484,8947163806,customer484@example.com,56,Female,3,Google Ads
+485,9574008959,customer485@example.com,58,Female,2,Instagram
+486,8405527005,customer486@example.com,21,Male,1,Organic
+487,8905052750,customer487@example.com,47,Male,2,Google Ads
+488,9472545906,customer488@example.com,47,Male,1,Instagram
+489,7819493551,customer489@example.com,39,Female,2,Organic
+490,9130866220,customer490@example.com,28,Male,2,Instagram
+491,8223329770,customer491@example.com,19,Female,3,Instagram
+492,8610235943,customer492@example.com,29,Male,3,Instagram
+493,9739125778,customer493@example.com,47,Male,1,Google Ads
+494,7617672698,customer494@example.com,53,Male,2,Google Ads
+495,8295114461,customer495@example.com,35,Female,3,Google Ads
+496,8645793659,customer496@example.com,43,Male,3,Organic
+497,8179849357,customer497@example.com,24,Male,2,Referral
+498,9290330824,customer498@example.com,18,Female,3,Instagram
+499,8575250356,customer499@example.com,43,Male,1,Instagram
+500,7928601088,customer500@example.com,40,Male,3,Instagram
