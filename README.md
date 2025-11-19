@@ -84,7 +84,7 @@ Model is saved at `churn_ml_model/xgb_churn_model.pkl`
 
 A full-stack web application has been built to operationalize the churn prediction model. The backend is developed using **Django**, which serves the trained XGBoost model via REST APIs and handles customer data management. The frontend is built with **React**, providing an intuitive interface for viewing customer churn predictions, risk scores, and option to call and email the customer.
 
-![Web Application Screenshot](images\churn_app.png)
+![Web Application Screenshot](images/churn_app.png)
 
 
 
