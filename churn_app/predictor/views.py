@@ -91,7 +91,6 @@ def call_script_api(request):
         }
 
         script = generate_call_script(context)
-        print("script:", script)
 
         return JsonResponse({
             "customer_id": int(row["customer_id"]),

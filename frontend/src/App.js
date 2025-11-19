@@ -89,13 +89,35 @@ function App() {
     setCallError("");
   };
 
-  const handleConfirmCall = () => {
-    console.log("TODO: trigger telephony API with:", {
-      customer: selectedCustomer,
-      phone: callPhone,
-      script: callScript,
+  // const handleConfirmCall = () => {
+  //   console.log("TODO: trigger telephony API with:", {
+  //     customer: selectedCustomer,
+  //     phone: callPhone,
+  //     script: callScript,
+  //   });
+  //   alert("In final version, this will trigger a real call via telephony API.");
+  // };
+
+  const handleConfirmCall = async () => {
+    alert("Button clicked");  // TEMP: just to test
+    console.log("Sending to backend:", { phone: callPhone, script: callScript });
+
+    const res = await fetch("/api/trigger-call/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ phone: callPhone, script: callScript }),
     });
-    alert("In final version, this will trigger a real call via telephony API.");
+
+
+    const data = await res.json();
+    if (!res.ok) {
+      console.error("Vapi error:", data);
+      alert("Failed to trigger call");
+      return;
+    }
+
+    console.log("Vapi call started:", data);
+    alert("Call triggered via Vapi");
   };
 
   // ---------------- RENDER ----------------
@@ -147,7 +169,7 @@ function App() {
           style={{ marginTop: 16, padding: "8px 16px" }}
           disabled={callLoading}
         >
-          Confirm &amp; Trigger Call (stub)
+          Confirm &amp; Trigger Call
         </button>
       </div>
     );
