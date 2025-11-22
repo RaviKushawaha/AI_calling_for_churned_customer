@@ -10,3 +10,7 @@ joblib
 Django
 django-environ
 django-cors-headers
+
+# voice agent
+retell-sdk
+

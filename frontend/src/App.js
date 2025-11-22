@@ -99,25 +99,29 @@ function App() {
   // };
 
   const handleConfirmCall = async () => {
-    alert("Button clicked");  // TEMP: just to test
-    console.log("Sending to backend:", { phone: callPhone, script: callScript });
+    alert("Button clicked");
 
-    const res = await fetch("/api/trigger-call/", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ phone: callPhone, script: callScript }),
+    console.log("Sending to backend:", {
+      phone: callPhone,
+      script: callScript,
     });
 
+    try {
+      const res = await fetch("http://127.0.0.1:8000/api/trigger-call/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ phone: callPhone, script: callScript }),
+      });
 
-    const data = await res.json();
-    if (!res.ok) {
-      console.error("Vapi error:", data);
-      alert("Failed to trigger call");
-      return;
+      console.log("Response status:", res.status);
+      const text = await res.text();
+      console.log("Raw response text:", text);
+
+      alert("Got response. Check console for details.");
+    } catch (err) {
+      console.error("Network or JS error:", err);
+      alert("Something went wrong calling backend");
     }
-
-    console.log("Vapi call started:", data);
-    alert("Call triggered via Vapi");
   };
 
   // ---------------- RENDER ----------------
